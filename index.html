@@ -1,1 +1,264 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>To Do</title><script defer="defer" src="bundle.js"></script></head><body><div class="main-navbar"><div class="logo">To Do</div><div class="search-bar-container"><button class="search-button"><img src="img/search.png" alt="Search image"></button> <input name="" id="" class="search-input"></div><div class="profile-settings-container"></div></div><div class="content-container"><div class="sidebar"><div class="default-list"><div class="default-list-item-container myday-button"><div class="default-list-item-icon-container"><img src="img/sun.png" alt=""></div><div class="default-list-item-text-container">My Day</div><div class="default-list-item-counter myday-counter">0</div></div><div class="default-list-item-container important-button"><div class="default-list-item-icon-container"><img src="img/star.png" alt=""></div><div class="default-list-item-text-container">Important</div><div class="default-list-item-counter important-counter">0</div></div></div><hr><div class="user-list"></div><div class="group-creation-container"><div class="group-creation"><div class="group-creation-input-container"><button class="group-creation-button"><img src="img/add.png" alt="Search image"></button> <input name="" id="" class="group-creation-input" placeholder="New Group"></div></div></div><div class="user-group-list"></div></div><div class="item-display-container"><div class="item-display-navbar"><div class="navbar-header"><img src="img/sun.png" alt="">My Day</div><div class="navbar-button-container"><div class="sort-button"><div class="navbar-button-img-container"><img src="img/sort.png" alt="Sort"></div><div class="navbar-button-text-container">Sort</div></div><div class="popover-sort-container"><div class="popover-container-header">Sort by</div><hr><div class="popover-list-container sort-importance"><div class="popover-list-text">Importance</div><div class="today"></div></div><div class="popover-list-container sort-due-date"><div class="popover-list-text">Due date</div><div class="tomorrow"></div></div><div class="custom-repeat-popover"><div class="custom-repeat-popover-input-container"><input type="number" class="custom-repeat-popover-num-input" value="1" min="1"> <select class="custom-repeat-select-field"><option value="Days">Days</option><option value="Weeks">Weeks</option><option value="Months">Months</option><option value="Years">Years</option></select></div><button class="custom-repeat-popover-btn">Save</button></div></div></div></div><div class="task-creation-container"><div class="creation-task"><img src="img/unchecked.png" alt="Unchecked"> <input name="" class="creation-task-input" placeholder="Add a task"></div><div class="task-creation-ui-container"><div class="task-creation-ui-button calendar"><div class="task-creation-calendar-container"><img src="img/greycalendar.png" alt="Calendar" class="calendar-img"><div class="due-date"></div></div><div class="popover-calendar-container"><div class="popover-container-header">Due</div><hr><div class="popover-list-container due-date-input-list-item" id="Today"><div class="popover-list-text">Today</div><div class="today"></div></div><div class="popover-list-container due-date-input-list-item" id="Tomorrow"><div class="popover-list-text">Tomorrow</div><div class="tomorrow"></div></div><div class="popover-list-container due-date-input-list-item" id="Next week"><div class="popover-list-text">Next week</div><div class="next-week"></div></div><hr><div class="popover-list-container due-input-button"><div class="popover-list-text">Pick a date</div></div><input type="date" class="due-date-input"></div></div><div class="task-creation-ui-button bell"><div class="task-creation-reminder-container"><img src="img/bell.png" alt="Bell" class="bell-img"><div class="reminder-date"></div></div><div class="popover-reminder-container"><div class="popover-container-header">Reminder</div><hr><div class="popover-list-container reminder-time-input-list-item" id="Later today"><div class="popover-list-text">Later today</div><div class="today">2:00 PM</div></div><div class="popover-list-container reminder-time-input-list-item" id="Tomorrow"><div class="popover-list-text">Tomorrow</div><div class="tomorrow">Thu, 9 AM</div></div><div class="popover-list-container reminder-time-input-list-item" id="Next week"><div class="popover-list-text">Next week</div><div class="next-week">Mon, 9 AM</div></div><hr><div class="popover-list-container reminder-date-input-button"><div class="popover-list-text">Pick a date and time<input type="datetime-local" class="reminder-date-input" visibility="hidden"></div></div></div></div><div class="task-creation-ui-button"><div class="task-creation-repeat-container"><img src="img/repeat.png" alt="Repeat" class="repeat-img"><div class="repeat-interval"></div></div><div class="popover-repeat-container"><div class="popover-container-header">Repeat</div><hr><div class="popover-list-container repeat-interval-input-list-item" id="Daily"><div class="popover-list-text">Daily</div><div class="today"></div></div><div class="popover-list-container repeat-interval-input-list-item" id="Weekdays"><div class="popover-list-text">Weekdays</div><div class="tomorrow"></div></div><div class="popover-list-container repeat-interval-input-list-item" id="Weekly"><div class="popover-list-text">Weekly</div><div class="next-week"></div></div><div class="popover-list-container repeat-interval-input-list-item" id="Next week"><div class="popover-list-text">Next week</div><div class="next-week"></div></div><div class="popover-list-container repeat-interval-input-list-item" id="Monthly"><div class="popover-list-text">Monthly</div><div class="next-week"></div></div><div class="popover-list-container repeat-interval-input-list-item" id="Yearly"><div class="popover-list-text">Yearly</div><div class="next-week"></div></div><div class="popover-list-container repeat-interval-input-list-item" id="Never repeat"><div class="popover-list-text">Never repeat</div><div class="next-week"></div></div><hr><div class="popover-list-container repeat-custom-input-btn"><div class="popover-list-text">Custom</div></div><div class="custom-repeat-popover"><div class="custom-repeat-popover-input-container"><input type="number" class="custom-repeat-popover-num-input" value="1" min="1"> <select class="custom-repeat-select-field"><option value="Days">Days</option><option value="Weeks">Weeks</option><option value="Months">Months</option><option value="Years">Years</option></select></div><button class="custom-repeat-popover-btn">Save</button></div></div></div><button class="add-button">Add</button></div></div><div class="list-container"><div class="to-do-list-container"></div><div class="completed-list-container"></div></div></div></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+<script defer src="bundle.js"></script></head>
+<body>
+    <div class="main-navbar">
+        <div class="logo">To Do</div>
+        <div class="search-bar-container">
+            <button class="search-button">
+                <img src="img/search.png" alt="Search image">
+            </button>
+            <input type="text" name="" id="" class="search-input">
+        </div>
+        <div class="profile-settings-container">
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="sidebar">
+            <div class="default-list">
+                <div class="default-list-item-container myday-button">
+                    <div class="default-list-item-icon-container">
+                        <img src="img/sun.png" alt="">
+                    </div>
+                    <div class="default-list-item-text-container">
+                        My Day
+                    </div>
+                    <div class="default-list-item-counter myday-counter">0</div>
+                </div>
+                <div class="default-list-item-container important-button">
+                    <div class="default-list-item-icon-container">
+                        <img src="img/star.png" alt="">
+                    </div>
+                    <div class="default-list-item-text-container">
+                        Important
+                    </div>
+                    <div class="default-list-item-counter important-counter">0</div>
+                </div>
+            </div>
+            <hr>
+            <div class="user-list">
+            </div>
+            <div class="group-creation-container">
+                <div class="group-creation">
+                    <div class="group-creation-input-container">
+                        <button class="group-creation-button">
+                            <img src="img/add.png" alt="Search image">
+                        </button>
+                        <input type="text" name="" id="" class="group-creation-input" placeholder="New Group">
+                    </div>
+                </div>
+            </div>
+            <div class="user-group-list"></div>
+        </div>
+        <div class="item-display-container">
+            <div class="item-display-navbar">
+                <div class="navbar-header"><img src="img/sun.png" alt="">My Day</div>
+                <div class="navbar-button-container">
+                    <div class="sort-button">
+                        <div class="navbar-button-img-container">
+                            <img src="img/sort.png" alt="Sort">
+                        </div>
+                        <div class="navbar-button-text-container">
+                            Sort
+                        </div>
+                    </div>
+                    <div class="popover-sort-container">
+                        <div class="popover-container-header">
+                            Sort by
+                        </div>
+                        <hr>
+                        <div class="popover-list-container sort-importance">
+                            <div class="popover-list-text">
+                                Importance
+                            </div>
+                            <div class="today"></div>
+                        </div>
+                        <div class="popover-list-container sort-due-date">
+                            <div class="popover-list-text">
+                                Due date 
+                            </div>
+                            <div class="tomorrow"></div>
+                        </div>
+                        <div class="custom-repeat-popover">
+                            <div class="custom-repeat-popover-input-container">
+                                <input type="number" class="custom-repeat-popover-num-input" value="1" min="1">
+                                <select class="custom-repeat-select-field">
+                                    <option value="Days">Days</option>
+                                    <option value="Weeks">Weeks</option>
+                                    <option value="Months">Months</option>
+                                    <option value="Years">Years</option>
+                                </select>
+                            </div>
+                            <button class="custom-repeat-popover-btn">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task-creation-container">
+                <div class="creation-task">
+                    <img src="img/unchecked.png" alt="Unchecked">
+                    <input type="text" name="" class="creation-task-input" placeholder="Add a task">
+                </div>
+                <div class="task-creation-ui-container">
+                    <div class="task-creation-ui-button calendar">
+                        <div class="task-creation-calendar-container">
+                            <img src="img/greycalendar.png" alt="Calendar" class="calendar-img">
+                            <div class="due-date"></div>
+                        </div>
+                        <div class="popover-calendar-container">
+                            <div class="popover-container-header">
+                                Due
+                            </div>
+                            <hr>
+                            <div class="popover-list-container due-date-input-list-item" id="Today">
+                                <div class="popover-list-text">
+                                    Today
+                                </div>
+                                <div class="today"></div>
+                            </div>
+                            <div class="popover-list-container due-date-input-list-item"  id="Tomorrow">
+                                <div class="popover-list-text">
+                                    Tomorrow
+                                </div>
+                                <div class="tomorrow"></div>
+                            </div>
+                            <div class="popover-list-container due-date-input-list-item" id="Next week">
+                                <div class="popover-list-text">
+                                    Next week
+                                </div>
+                                <div class="next-week"></div>
+                            </div>
+                            <hr>
+                            <div class="popover-list-container due-input-button" >
+                                <div class="popover-list-text ">
+                                    Pick a date
+                                </div>
+
+                            </div>
+                            <input type="date" class="due-date-input">
+                        </div>
+                    </div>
+                    <div class="task-creation-ui-button bell">
+                        <div class="task-creation-reminder-container">
+                            <img src="img/bell.png" alt="Bell" class="bell-img">
+                            <div class="reminder-date"></div>
+                        </div>
+
+                        <div class="popover-reminder-container">
+                            <div class="popover-container-header">
+                                Reminder
+                            </div>
+                            <hr>
+                            <div class="popover-list-container reminder-time-input-list-item" id="Later today">
+                                <div class="popover-list-text">
+                                    Later today
+                                </div>
+                                <div class="today">2:00 PM</div>
+                            </div>
+                            <div class="popover-list-container reminder-time-input-list-item" id="Tomorrow">
+                                <div class="popover-list-text">
+                                    Tomorrow 
+                                </div>
+                                <div class="tomorrow">Thu, 9 AM</div>
+                            </div>
+                            <div class="popover-list-container reminder-time-input-list-item" id="Next week">
+                                <div class="popover-list-text">
+                                    Next week
+                                </div>
+                                <div class="next-week">Mon, 9 AM</div>
+                            </div>
+                            <hr>
+                            <div class="popover-list-container reminder-date-input-button">
+                                <div class="popover-list-text ">
+                                    Pick a date and time<input type="datetime-local" class="reminder-date-input" visibility = 'hidden'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-creation-ui-button ">
+                        <div class="task-creation-repeat-container">
+                            <img src="img/repeat.png" alt="Repeat" class="repeat-img">
+                            <div class="repeat-interval"></div>
+                        </div>
+                        <div class="popover-repeat-container">
+                            <div class="popover-container-header">
+                                Repeat
+                            </div>
+                            <hr>
+                            <div class="popover-list-container repeat-interval-input-list-item" id="Daily">
+                                <div class="popover-list-text">
+                                    Daily
+                                </div>
+                                <div class="today"></div>
+                            </div>
+                            <div class="popover-list-container repeat-interval-input-list-item" id="Weekdays">
+                                <div class="popover-list-text">
+                                    Weekdays 
+                                </div>
+                                <div class="tomorrow"></div>
+                            </div>
+                            <div class="popover-list-container repeat-interval-input-list-item" id="Weekly">
+                                <div class="popover-list-text">
+                                    Weekly
+                                </div>
+                                <div class="next-week"></div>
+                            </div>
+                            <div class="popover-list-container repeat-interval-input-list-item" id="Next week">
+                                <div class="popover-list-text">
+                                    Next week
+                                </div>
+                                <div class="next-week"></div>
+                            </div>
+                            <div class="popover-list-container repeat-interval-input-list-item" id="Monthly">
+                                <div class="popover-list-text">
+                                    Monthly
+                                </div>
+                                <div class="next-week"></div>
+                            </div>
+                            <div class="popover-list-container repeat-interval-input-list-item" id="Yearly">
+                                <div class="popover-list-text">
+                                    Yearly
+                                </div>
+                                <div class="next-week"></div>
+                            </div>
+                            <div class="popover-list-container repeat-interval-input-list-item" id="Never repeat">
+                                <div class="popover-list-text">
+                                    Never repeat
+                                </div>
+                                <div class="next-week"></div>
+                            </div>
+                            <hr>
+                            <div class="popover-list-container repeat-custom-input-btn">
+                                <div class="popover-list-text">
+                                    Custom 
+                                </div>
+                            </div>
+                            <div class="custom-repeat-popover">
+                                <div class="custom-repeat-popover-input-container">
+                                    <input type="number" class="custom-repeat-popover-num-input" value="1" min="1">
+                                    <select class="custom-repeat-select-field">
+                                        <option value="Days">Days</option>
+                                        <option value="Weeks">Weeks</option>
+                                        <option value="Months">Months</option>
+                                        <option value="Years">Years</option>
+                                    </select>
+                                </div>
+                                <button class="custom-repeat-popover-btn">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="add-button">Add</button>
+                </div>
+            </div>
+            <div class="list-container">
+                <div class="to-do-list-container"></div>
+                <div class="completed-list-container"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
